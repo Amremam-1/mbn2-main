@@ -1,0 +1,105 @@
+.section {
+  background: black;
+  padding: 20px 0;
+  @media (max-width: 374px) {
+    padding: 0;
+  }
+  .container {
+    padding: 0 100px;
+
+    @media (max-width: 990px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 425px) {
+      padding: 10px;
+    }
+    @media (max-width: 374px) {
+      padding: 0;
+    }
+    .main {
+      background: #1e1e1e;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 22px 15px 33px;
+      @media (max-width: 612px) {
+        flex-direction: column;
+      }
+
+      .main_info {
+        flex: 1;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .name {
+            font-size: 20px;
+            color: #fff;
+          }
+          span {
+            font-size: 16px;
+            color: #888990;
+          }
+        }
+
+        .main_info_bottom {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .icon {
+              color: #fff;
+              font-size: 17px;
+            }
+            color: #888990;
+            font-family: 400;
+          }
+        }
+      }
+
+      .info_image {
+        flex: 1;
+        // width: fit-content;
+        position: relative;
+
+        @media (max-width: 612px) {
+          width: fit-content;
+          margin: auto;
+        }
+        .image {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid #888990;
+
+          @media (max-width: 612px) {
+            position: inherit;
+            display: block;
+            margin-top: 30px;
+            flex: 0;
+          }
+        }
+      }
+    }
+  }
+}

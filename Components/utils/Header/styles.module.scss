@@ -1,0 +1,86 @@
+.header {
+  height: 75px;
+  // border-bottom: 1px solid $gray-BD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  color: $white;
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    .logo {
+      .logoImg {
+      }
+    }
+    .nav {
+      .navList {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        @media (max-width: $xl-media) {
+          gap: 16px;
+        }
+        @media (max-width: $md-media) {
+          display: none;
+        }
+        .navItem {
+          font-weight: 700;
+          text-transform: uppercase;
+          // padding: 10px 16px;
+          // cursor: pointer;
+          .navLink {
+            width: 100%;
+            @include transition(0.3s);
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -1px;
+              right: 50%;
+              @include transform(translateX(-50%));
+              width: 0px;
+              height: 2px;
+              background-color: transparent;
+              @include transition(0.4s);
+            }
+            @media (max-width: $lg-media) {
+              font-size: 14px;
+            }
+          }
+          &:hover {
+            .navLink {
+              &::before {
+                right: -50%;
+                width: 100%;
+                background-color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .modes {
+        .lightModeBtn {
+          .lightModeIcon {
+            font-size: 20px;
+          }
+        }
+      }
+      .apps {
+        .appsBtn {
+          .appsIcon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.jobForm {
+  background-color: $black;
+  color: $white;
+  min-height: 50vh;
+  z-index: 1;
+  padding: 50px 0px;
+  position: relative;
+  .container {
+    .form {
+      .formtitle {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        color: $gray-D6;
+        border-bottom: 2px solid $gray-D6;
+        width: fit-content;
+        padding-bottom: 2px;
+        @media (max-width: $xxs-media) {
+          font-size: 14px;
+        }
+      }
+      .secBoxLabel {
+        margin-bottom: 4px;
+        display: block;
+        color: $gray-D6;
+        @media (max-width: $xs-media) {
+          font-size: 14px;
+        }
+      }
+      .secBox {
+        display: flex;
+        // align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+      .secBox2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        .radioWrapper {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          .radioLabel {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .radioInput {
+              display: inline-block;
+              height: 16px;
+              width: 16px;
+              overflow: hidden;
+              margin-top: -4px;
+              vertical-align: middle;
+              appearance: none;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              background-color: transparent;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              border: 1px solid #ccc;
+              transition: 0.2s ease-in-out;
+              transition-property: background-color, border;
+              @include borderRadius(50%);
+              cursor: pointer;
+  
+              &:checked {
+                background-color: $primary;
+                border-color: transparent;
+                background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E);
+              }
+            }
+          }
+        }
+        .radioErrorMsg {
+          // margin-top: -6px;
+          font-size: 12px;
+          color: $red-FF;
+        }
+      }
+      .addBtn {
+        background-color: $blue1F;
+        padding: 10px 16px;
+        margin-bottom: 32px;
+        @include borderRadius(4px);
+        @include transition(0.4s);
+        &:hover {
+          background-color: $primary;
+        }
+      }
+      .sendBtn {
+        font-size: 18px;
+        background-color: $primary;
+        padding: 10px 32px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        @include borderRadius(4px);
+        @include transition(0.4s);
+        opacity: 1;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

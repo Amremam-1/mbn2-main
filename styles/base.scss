@@ -1,0 +1,161 @@
+$white: #fff;
+$black: #000;
+$black0AB: #000000AB;
+$black02: #021A2C;
+$black11: #111111;
+$black13: #131726;
+$black19: #191C1F;
+$black18: #181818;
+$black1C: #1C1C1C;
+$black25: #252422;
+$black26: #263238;
+$black28: #282828;
+$black29: #292D32;
+$black34: #344756;
+$black3E: #3E4958;
+$black40: #403D39;
+$black46: #464E57;
+$black51: #515151;
+$black5A: #5a5a5a45;
+$black5F: #5F6C72;
+$black59: #595566;
+$black63: #636262;
+$black68: #686666;
+$black66: #666666;
+$black6C: #6c6c6c;
+$black77: #77878F;
+$gray-79: #797979;
+$gray-8B: #8b96a5;
+$gray-8B8B: #8b8b8b;
+$gray-A5: #A5A5A5;
+$gray-A7: #A7A7A7;
+$gray-A9: #A9A9A9;
+$gray-AC: #ACACAC;
+$gray-ADA: #ADAFB3;
+$gray-AD: #ADB7BC;
+$gray-BA: #BABABA;
+$gray-BD: #BDBDBD;
+$gray-C0: #c0c0c0;
+$gray-C1: #C1C1C1;
+$gray-CD: #cdcdcd;
+$gray-D3: #D3D3D3;
+$gray-D6: #D6D6D6;
+$gray-D9: #D9D9D9;
+$gray-DE: #DEE2E7;
+$gray-D2: #d2d2d2;
+$gray-E0: #E0E0E0;
+$gray-E7: #e7e7e7;
+$gray-EF: #EFF2F4;
+$gray-F2: #f2f2f2;
+$gray-F3: #F3F3F3;
+$gray-F4: #F4F4F4;
+$gray-F7: #F7FAFC;
+$gray-FC: #FCFEFE;
+$gray-FA: #fafafa;
+$blueE4: #E4E7E9;
+$yellow-FF: #FFDBB8;
+$yellow-FF9: #FF9017;
+$yellow-FE: #FEB103;
+$yellow-EB: #EBC80C;
+$green-47: #47AD69;
+$green-51: #51A86C;
+$limon-C0: #C0DB46;
+$red-FF: #FF0010;
+$red-E4: #E4736D;
+$red-E8: #E8B6B4;
+$blue1F: #1fa299;
+
+$blue-3D: #3da0d1;
+
+$primary: #f6941d;
+$btn-bg: rgb(221, 198, 208, 0.39);
+$btn-bg-op: rgb(221, 198, 208, 1);
+
+
+$light-green: rgba(214, 248, 240, 0.50);
+$overflow-white: rgba(255, 255, 255, 0.6);
+$overflow-black: rgba(0, 0, 0, 0.1);
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-xxl: 32px;
+
+$shadow-1: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-2: 10px 24px 74px 0px rgba(0, 0, 0, 0.04);
+$shadow-3: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+$shadow-4: 0px 1px 2px 0px rgba(255, 255, 255, 0.1);
+
+$shadow-15: 0 0 0 0.2rem rgba(0,123,255,.25);
+
+
+$xxs-media: 370px;
+$xs-media: 450px;
+$sm-media: 576px;
+$md-media: 768px;
+$lg-media: 992px; 
+$xl-media: 1200px;
+$xxl-media: 1400px;
+
+$Roboto-font: 'Roboto', sans-serif;
+$Cairo-font: 'Cairo', sans-serif;
+$Poppins-font: 'Poppins', sans-serif;
+
+// -----------SASS MIXINS ---------------------------
+@mixin circle($dimension) {
+  width: $dimension;
+  height: $dimension;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@mixin borderRadius($dim) {
+  border-radius: $dim;
+  -webkit-border-radius: $dim;
+  -moz-border-radius: $dim;
+  -ms-border-radius: $dim;
+  -o-border-radius: $dim;
+}
+
+@mixin transition($sec) {
+  transition: all $sec ease-in-out;
+  -webkit-transition: all $sec ease-in-out;
+  -moz-transition: all $sec ease-in-out;
+  -ms-transition: all $sec ease-in-out;
+  -o-transition: all $sec ease-in-out;
+}
+
+@mixin transform($option) {
+  transform: $option;
+  -webkit-transform: $option;
+  -moz-transform: $option;
+  -ms-transform: $option;
+  -o-transform: $option;
+}
+
+@mixin centerElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin background-gradient {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%,
+  );
+}
+
+@mixin animate($val) {
+  animation: $val;
+  -webkit-animation: $val;
+}
+
+// -----------SASS MIXINS ---------------------------
+

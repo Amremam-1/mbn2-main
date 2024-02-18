@@ -1,0 +1,82 @@
+.selectBox,
+.selectBoxCustom {
+  // flex: 1;
+  border: 1px solid $black11;
+  position: relative;
+  height: 55px;
+  color: $black66;
+  background-color: $black11;
+  @include borderRadius(6px);
+  min-width: 280px;
+  padding: 10px;
+  font-size: 14px;
+  @include transition(0.2s);
+  @media (max-width: $xs-media) {
+    flex: 0 0 100%;
+  }
+  &:hover {
+    border-color: $primary;
+  }
+  .selectedItem {
+    padding: 12px 9px 12px 7px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    cursor: pointer;
+    .text {
+      font-size: 14px;
+      color: $black66;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .listIcon {
+      color: $black3E;
+      fill: $black3E;
+      font-size: 22px;
+    }
+  }
+  .dropMenuSelection {
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 0;
+    width: 100%;
+    border: 1px solid $black11;
+    color: $black66;
+    background-color: $black11;
+    @include borderRadius(6px);
+    padding: 4px 0px 8px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: $shadow-4;
+    .dropMenuItem {
+      height: 100%;
+      padding: 2px 6px;
+      font-size: 14px;
+      color: $black66;
+      cursor: pointer;
+      @include borderRadius(0.2s);
+      &:hover {
+        background-color: $black5F;
+        color: $white;
+      }
+    }
+  }
+
+  .errorMsg {
+    position: absolute;
+    top: calc(100%);
+    right: 2px;
+    font-size: 12px;
+    color: $red-FF;
+  }
+}
+
+.selectBoxCustom {
+  min-width: 150px;
+  flex: auto;
+}

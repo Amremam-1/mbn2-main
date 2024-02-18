@@ -1,0 +1,56 @@
+.pureSelect {
+  min-width: 280px;
+//   width: 100%;
+//   flex: 1;
+  @media (max-width: $md-media) {
+    // width: 100% !important;
+  }
+  @media (max-width: $sm-media) {
+    flex: 0 0 100%;
+  }
+  .container,
+  .containerError {
+    border: 1px solid $black11;
+    position: relative;
+    height: 55px;
+    color: $black66;
+    background-color: $black11;
+    @include borderRadius(6px);
+    padding: 10px;
+    font-size: 14px;
+    // cursor: pointer;
+    @include transition(0.2s);
+
+    &:hover {
+      border-color: $primary;
+    }
+    .select {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      .option {
+        cursor: pointer;
+        border: 1px solid $black11;
+        position: relative;
+        width: 100%;
+        color: $black66;
+        background-color: $black11;
+        @include borderRadius(6px);
+        &:hover,
+        &:focus {
+          background-color: $black11;
+          color: $black11;
+        }
+      }
+    }
+  }
+  .containerError {
+    border-color: $red-E4;
+  }
+  .error {
+    font-size: 12px;
+    color: $red-FF;
+  }
+}
