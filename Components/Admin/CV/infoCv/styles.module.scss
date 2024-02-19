@@ -1,5 +1,5 @@
 .section {
-  background: black;
+  background: #eef0f4;
   padding: 20px 0;
   @media (max-width: 374px) {
     padding: 0;
@@ -20,7 +20,7 @@
       padding: 0;
     }
     .main {
-      background: #1e1e1e;
+      background: #fff;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
       border-radius: 8px;
 
@@ -44,12 +44,12 @@
           margin-bottom: 20px;
 
           .name {
-            font-size: 20px;
-            color: #fff;
+            font-size: 22px;
+            color: #1e1e1e;
           }
           span {
             font-size: 16px;
-            color: #888990;
+            color: #1e1e1e;
           }
         }
 
@@ -64,10 +64,10 @@
             gap: 8px;
 
             .icon {
-              color: #fff;
+              color: #201032;
               font-size: 17px;
             }
-            color: #888990;
+            color: #5b5a5e;
             font-family: 400;
           }
         }

@@ -11,8 +11,9 @@
     width: 100%;
 
     .box {
+      background-color: #fff;
       padding: 5px 10px;
-      border: 0.7px solid #776b5d;
+      border: 0.7px solid #fff;
       border-radius: 3px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       display: flex;
@@ -57,8 +58,9 @@
   }
 }
 .box_last {
+  background-color: #fff;
   padding: 5px 10px;
-  border: 0.7px solid #776b5d;
+  border: 0.7px solid #fff;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -97,7 +99,8 @@
   .box {
     flex: 1;
     padding: 10px 20px;
-    border: 0.7px solid #776b5d;
+    background-color: #fff;
+    border: 0.7px solid #fff;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -148,7 +151,8 @@
 
   .box {
     padding: 5px 10px;
-    border: 0.7px solid #776b5d;
+    background: #fff;
+    border: 0.7px solid #fff;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -192,7 +196,8 @@
   }
   .box_boolean {
     padding: 10px 20px;
-    border: 0.5px solid #776b5d;
+    border: 0.5px solid #fff;
+    background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -202,7 +207,7 @@
     cursor: pointer;
 
     .true {
-      background-color: #aaaaaa61;
+      background-color: #5b5a5e;
       margin-top: 20px;
       border-radius: 5px;
       padding: 5px;
@@ -212,7 +217,8 @@
 
   .box_box {
     padding: 5px 10px;
-    border: 0.5px solid #776b5d;
+    border: 0.5px solid #5b5a5e;
+    background-color: #5b5a5e;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;

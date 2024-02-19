@@ -28,7 +28,6 @@ const CvPage = ({ cvData }) => {
               <h3 className={styles.name}>
                 {data.first_name} {data.father_name} {data.family_name}
               </h3>
-              <span>{data.jobTitle}</span>
             </div>
             <div className={styles.main_info_bottom}>
               <p>

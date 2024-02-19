@@ -1,5 +1,5 @@
 .section {
-  background: black;
+  background: #eef0f4;
   padding: 20px 0;
 
   .container {
@@ -23,7 +23,7 @@
       width: 100%;
 
       .profile {
-        background: #1e1e1e;
+        background: #fff;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         margin-bottom: 30px;
@@ -45,24 +45,24 @@
             align-items: center;
 
             .icon {
-              font-size: 22px;
+              font-size: 18px;
               margin-left: 10px;
-              color: #fff;
+              color: #201032;
               @media (max-width: 374px) {
                 font-size: 16px;
               }
             }
             h4 {
               font-size: 20px;
-              color: #888990;
+              color: #5b5a5e;
               @media (max-width: 374px) {
-                font-size: 18px;
+                font-size: 16px;
               }
             }
           }
 
           .arrow {
-            color: #fff;
+            color: #201032;
           }
         }
 
@@ -70,7 +70,7 @@
           position: relative;
           opacity: 0;
           transform: translateY(10px);
-          background: #5b5b5c;
+          background: #f4941f;
           overflow: hidden;
           margin-bottom: 10px;
           width: 100%;
