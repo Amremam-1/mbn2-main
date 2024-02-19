@@ -3,14 +3,11 @@ import React from "react"
 import { useState } from "react"
 import styles from "./styles.module.scss"
 
-const OtherInformation = () => {
-  const [data, setData] = useState({
-    hasLegalJudgements: true,
-  })
-
-  const [friends, setfriends] = useState({
-    hasFriends: true,
-  })
+const OtherInformation = ({ data }) => {
+  const [hasLegalJudgements, setHasLegalJudgements] = useState(
+    data.have_convicted
+  )
+  const [hasFriends, setHasFriends] = useState(data.have_employed_relatives)
 
   return (
     <div className={styles.section}>
@@ -20,15 +17,15 @@ const OtherInformation = () => {
           <div className={styles.info}>
             <p>
               <span>هل لديك سياره ؟</span>
-              نعم
+              {data.have_car}
             </p>
             <p>
               <span>نوعها</span>
-              لا يوجد
+              {data.car_Type}
             </p>
             <p>
               <span>سنة الصنع</span>
-              لا يوجد
+              {data.date_of_manufacturing}
             </p>
           </div>
         </div>
@@ -37,38 +34,40 @@ const OtherInformation = () => {
           <div className={styles.info}>
             <p>
               <span>نوعها</span>
-              لا يوجد
+              {data.licence_category}
             </p>
             <p>
               <span>رقمها</span>
-              لا يوجد
+              {data.licence_number}
             </p>
             <p>
               <span>تاريخ صدورها</span>
-              لا يوجد
+              {data.licence_date_of_issue}
             </p>
             <p>
               <span>تاريخ انتهائها</span>
-              لا يوجد
+              {data.licence_date_of_expiry}
             </p>
             <p>
               <span>مكان الإصدار</span>
-              لا يوجد
+              {data.licence_place_of_issue}
             </p>
             <p>
               <span>فصيلة الدم</span>
-              A+
+              {data.blood_group}
             </p>
           </div>
         </div>
-        <div className={styles.box_boolean}>
+        <div className={`${styles.box_boolean} ${styles.box_boo}`}>
           <div className={styles.info}>
             <p>
               <h1>كيف عرفت عن فرصة العمل؟</h1>
 
-              <div className={styles.true}>
-                من علي المواقع التواصل الاجتماعي وخاصه فيس بوك
-              </div>
+              {data.how_know_job ? (
+                <div className={styles.true}></div>
+              ) : (
+                "غير محدد"
+              )}
             </p>
           </div>
         </div>
@@ -77,10 +76,8 @@ const OtherInformation = () => {
             <p>
               <h1>هل صدرت بحقك أحكام قضائية؟</h1>
 
-              {data.hasLegalJudgements ? (
-                <div className={styles.true}>
-                  بسبب اخذ قرض من البنك وعدم قدرتي علي دفع المصاريف .......
-                </div>
+              {hasLegalJudgements ? (
+                <div className={styles.true}>{data.convict_description}</div>
               ) : (
                 "لا"
               )}
@@ -93,32 +90,30 @@ const OtherInformation = () => {
             <p>
               <h1>هل لديك أصحاب من غير الأقارب يعملون في شركتنا ؟</h1>
 
-              {friends.hasFriends ? (
+              {hasFriends ? (
                 <React.Fragment>
-                  <div className={styles.true}>احمد مصطفي مدير المالية</div>
-
                   <div className={styles.box_box}>
                     <h1>بيانات الشخص :</h1>
                     <div className={styles.info}>
                       <p>
                         <span>الاسم</span>
-                        احمد مصطفي
+                        {data.name}
                       </p>
                       <p>
                         <span>الوظيفه </span>
-                        مدير المالية
+                        {data.jobTitle ? data.jobTitle : "غير محدد"}
                       </p>
                       <p>
                         <span>الهاتف</span>
-                        لا يوجد
+                        {data.phone ? data.phone : "غير محدد"}
                       </p>
                       <p>
                         <span>الشركة</span>
-                        لا يوجد
+                        {data.company_name ? data.phone : "غير محدد"}
                       </p>
                       <p>
                         <span>العنوان</span>
-                        لا يوجد
+                        {data.company_address ? data.phone : "غير محدد"}
                       </p>
                     </div>
                   </div>

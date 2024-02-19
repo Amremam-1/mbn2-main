@@ -15,7 +15,18 @@ import Experience from "./about/Experience"
 import Languages from "./about/Languages"
 import OtherInformation from "./about/OtherInformation"
 
-const Content = () => {
+const Content = ({ cvData }) => {
+  if (!cvData || !cvData.data) {
+    return (
+      <div className="spinner-grow" role="status">
+        <span className="sr-only">تحميل ...</span>
+      </div>
+    )
+  }
+
+  const { data } = cvData
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [activeClick, setActiveClick] = useState(null)
 
   const handleClick = (index) => {
@@ -82,7 +93,7 @@ const Content = () => {
 
               {activeClick === section.id && (
                 <div className={styles.sectionContent}>
-                  <section.component />
+                  <section.component data={data} />
                 </div>
               )}
             </div>

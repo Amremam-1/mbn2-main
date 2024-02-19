@@ -1,43 +1,28 @@
 import styles from "./styles.module.scss"
 
-const Languages = () => {
+const Languages = ({ data }) => {
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.box}>
-          <h1>اللغة العربية :</h1>
-          <div className={styles.info}>
-            <p>
-              <span>مستوى التحدث باللغة</span>
-              ممتاز
-            </p>
-            <p>
-              <span>مستوى القراءه باللغة</span>
-              ممتاز
-            </p>
-            <p>
-              <span>متسوى الكتابة باللغة</span>
-              جيد
-            </p>
+        {data.language.map((language, index) => (
+          <div className={styles.box} key={index}>
+            <h1>{language.lang}:</h1>
+            <div className={styles.info}>
+              <p>
+                <span>مستوى التحدث باللغة</span>
+                {language.speaking || "لا يوجد"}
+              </p>
+              <p>
+                <span>مستوى القراءة باللغة</span>
+                {language.reading || "لا يوجد"}
+              </p>
+              <p>
+                <span>مستوى الكتابة باللغة</span>
+                {language.writing || "لا يوجد"}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className={styles.box}>
-          <h1>اللغة الإنجليزية :</h1>
-          <div className={styles.info}>
-            <p>
-              <span>مستوى التحدث باللغة</span>
-              ممتاز
-            </p>
-            <p>
-              <span>مستوى القراءه باللغة</span>
-              ممتاز
-            </p>
-            <p>
-              <span>متسوى الكتابة باللغة</span>
-              جيد
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   )

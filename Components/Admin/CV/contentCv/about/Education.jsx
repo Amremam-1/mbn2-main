@@ -1,35 +1,35 @@
 import styles from "./styles.module.scss"
 
-const Education = () => {
+const Education = ({ data }) => {
   return (
     <div className={styles.section}>
-      <div className={styles.container}>
+      <div className={styles.container_exper}>
         <div className={styles.box}>
           <h1>التحصيل العلمي :</h1>
           <div className={styles.info}>
             <p>
               <span>تحصيل علمي </span>
-              دراسات عليا
+              {data.education.phase}
             </p>
             <p>
               <span>إسم المدرسة / الجامعة</span>
-              جامعه طنطا
+              {data.education.name_of_institute}
             </p>
             <p>
               <span>التخصص</span>
-              هندسه برمجيات
+              {data.education.specialize}
             </p>
             <p>
               <span>الدرجه</span>
-              جيد جدا
+              {data.education.grade}
             </p>
             <p>
               <span>مدة الدراسة من سنه</span>
-              2018/4/17
+              {data.education.duration_study_from}
             </p>
             <p>
               <span>مدة الدراسة إلي سنه</span>
-              2024/6/15
+              {data.education.duration_study_to}
             </p>
           </div>
         </div>
@@ -39,23 +39,23 @@ const Education = () => {
           <div className={styles.info}>
             <p>
               <span>إسم المعهد </span>
-              معهد حاسبات و معلومات
+              {data.education.name_of_institute}
             </p>
             <p>
               <span>المدينة / البلد</span>
-              طنطا
+              {data.education.city}
             </p>
             <p>
               <span>التخصص</span>
-              هندسه برمجيات
+              {data.education.specialize}
             </p>
             <p>
               <span>من تاريخ</span>
-              2018/4/17
+              {data.education.duration_study_from}
             </p>
             <p>
               <span>إلي تاريخ</span>
-              2024/6/15
+              {data.education.duration_study_to}
             </p>
           </div>
         </div>
@@ -65,3 +65,4 @@ const Education = () => {
 }
 
 export default Education
+ 
