@@ -19,7 +19,7 @@ const Content = ({ cvData }) => {
   if (!cvData || !cvData.data) {
     return (
       <div className="spinner-grow" role="status">
-        <span className="sr-only">تحميل ...</span>
+        <span className="sr-only">Loading ...</span>
       </div>
     )
   }
