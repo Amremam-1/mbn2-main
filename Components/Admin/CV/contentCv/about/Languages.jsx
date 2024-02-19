@@ -1,4 +1,3 @@
-
 import styles from "./styles.module.scss"
 
 const Languages = () => {
@@ -9,16 +8,16 @@ const Languages = () => {
           <h1>اللغة العربية :</h1>
           <div className={styles.info}>
             <p>
-              ممتاز
               <span>مستوى التحدث باللغة</span>
-            </p>
-            <p>
               ممتاز
-              <span>مستوى القراءه باللغة</span>
             </p>
             <p>
-              جيد
+              <span>مستوى القراءه باللغة</span>
+              ممتاز
+            </p>
+            <p>
               <span>متسوى الكتابة باللغة</span>
+              جيد
             </p>
           </div>
         </div>
@@ -26,16 +25,16 @@ const Languages = () => {
           <h1>اللغة الإنجليزية :</h1>
           <div className={styles.info}>
             <p>
-              ممتاز
               <span>مستوى التحدث باللغة</span>
-            </p>
-            <p>
               ممتاز
-              <span>مستوى القراءه باللغة</span>
             </p>
             <p>
-              جيد
+              <span>مستوى القراءه باللغة</span>
+              ممتاز
+            </p>
+            <p>
               <span>متسوى الكتابة باللغة</span>
+              جيد
             </p>
           </div>
         </div>

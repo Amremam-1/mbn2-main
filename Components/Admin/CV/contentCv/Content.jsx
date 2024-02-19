@@ -74,9 +74,9 @@ const Content = () => {
                   <h4>{section.title}</h4>
                 </div>
                 {activeClick === section.id ? (
-                  <IoIosArrowDown className={styles.arrow} />
-                ) : (
                   <IoIosArrowUp className={styles.arrow} />
+                ) : (
+                  <IoIosArrowDown className={styles.arrow} />
                 )}
               </div>
 

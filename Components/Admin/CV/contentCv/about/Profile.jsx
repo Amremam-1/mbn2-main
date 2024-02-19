@@ -8,20 +8,20 @@ const Profile = () => {
           <h1>بيانات الميلاد :</h1>
           <div className={styles.info}>
             <p>
-              15/6/2000
               <span>تاريخ الميلاد</span>
+              15/6/2000
             </p>
             <p>
-              طنطا
               <span>مكان الميلاد</span>
+              طنطا
             </p>
             <p>
-              مصرى
               <span>الجنسية</span>
+              مصرى
             </p>
             <p>
-              مسلم
               <span>الديانة</span>
+              مسلم
             </p>
           </div>
         </div>
@@ -29,16 +29,16 @@ const Profile = () => {
           <h1>بيانات بطاقة الأحوال المدنية :</h1>
           <div className={styles.info}>
             <p>
-              30006151600398
               <span>رقم البطاقة</span>
+              30006151600398
             </p>
             <p>
-              طنطا
               <span>مكان الإصدار</span>
+              طنطا
             </p>
             <p>
-              15-6-2019
               <span>تاريخ الإصدار</span>
+              15-6-2019
             </p>
           </div>
         </div>
@@ -46,16 +46,16 @@ const Profile = () => {
           <h1>بيانات جواز السفر :</h1>
           <div className={styles.info}>
             <p>
-              30006151600398
               <span>رقم جواز السفر</span>
+              30006151600398
             </p>
             <p>
-              طنطا
               <span>مكان الإصدار</span>
+              طنطا
             </p>
             <p>
-              15-6-2019
               <span>تاريخ الإصدار</span>
+              15-6-2019
             </p>
           </div>
         </div>
@@ -64,20 +64,20 @@ const Profile = () => {
           <h1> بيانات التواصل :</h1>
           <div className={styles.info}>
             <p>
-              0408521546
               <span>هاتف المنزل</span>
+              0408521546
             </p>
             <p>
-              0110156848
               <span>هاتف العمل</span>
+              0110156848
             </p>
             <p>
-              01065621168
               <span>الجوال</span>
+              01065621168
             </p>
             <p>
-              info@gmail.com
               <span>البريد الالكتروني</span>
+              info@gmail.com
             </p>
           </div>
         </div>
@@ -85,16 +85,16 @@ const Profile = () => {
           <h1> بيانات العنوان :</h1>
           <div className={styles.info}>
             <p>
-              القاهره
               <span>الدولة</span>
+              القاهره
             </p>
             <p>
-              طنطا
               <span>المدينة</span>
+              طنطا
             </p>
             <p>
-              طنطا
               <span>العنوان الحالي</span>
+              طنطا
             </p>
           </div>
         </div>

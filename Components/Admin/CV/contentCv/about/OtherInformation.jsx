@@ -14,18 +14,14 @@ const OtherInformation = () => {
 
   return (
     <div className={styles.section}>
-      <div className={styles.container}>
-        <div className={styles.box}>
-          <div className={styles.info}>
-            <p>
-              <h1>هل لديك سياره ؟</h1>
-              نعم
-            </p>
-          </div>
-        </div>
+      <div className={styles.container_information}>
         <div className={styles.box}>
           <h1>بيانات السيارة إن وجدت</h1>
           <div className={styles.info}>
+            <p>
+              <span>هل لديك سياره ؟</span>
+              نعم
+            </p>
             <p>
               <span>نوعها</span>
               لا يوجد
